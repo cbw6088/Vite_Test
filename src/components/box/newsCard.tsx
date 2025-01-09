@@ -163,7 +163,7 @@ export default function NewsCard() {
             </CardContainer>
 
             <CardContainer>
-                <NewsImg src={newsImg1} />
+                <NewsImg src={newsImg2} />
                 <NewsContentContainer>
                     <Title>
                         금감원, 우리금융 검사 결과 발표 2월로 연기
@@ -186,7 +186,7 @@ export default function NewsCard() {
             </CardContainer>
 
             <CardContainer>
-                <NewsImg src={newsImg1} />
+                <NewsImg src={newsImg2} />
                 <NewsContentContainer>
                     <Title>
                         금감원, 우리금융 검사 결과 발표 2월로 연기
@@ -209,7 +209,7 @@ export default function NewsCard() {
             </CardContainer>
 
             <CardContainer>
-                <NewsImg src={newsImg1} />
+                <NewsImg src={newsImg2} />
                 <NewsContentContainer>
                     <Title>
                         금감원, 우리금융 검사 결과 발표 2월로 연기
