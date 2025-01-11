@@ -29,7 +29,7 @@ const RankContainer = styled.div`
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    background-color: #dc6161;
+    /* background-color: #dc6161; */
     width: 20%;
     height: 100%;
 `
