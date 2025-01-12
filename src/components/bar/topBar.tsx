@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import profileImg from '../../assets/profile.png'
 import searchIcon from '../../assets/search.png'
 import categoryIcon from '../../assets/menu.png'
+import { Link } from 'react-router-dom'
 
 const Container = styled.div`
     display: flex;
@@ -173,7 +174,9 @@ export default function TopBar() {
                 </SearchContainer>
                 <LoginContainer>
                     <ProfileImg src={profileImg} />
-                    <LoginId>로그인</LoginId>
+                    <Link to="/login" style={{textDecoration: 'none'}}>
+                        <LoginId>로그인</LoginId>
+                    </Link>
                 </LoginContainer>
             </TopContainer>
             <BottomContainer>

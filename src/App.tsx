@@ -1,52 +1,21 @@
 import styled from 'styled-components'
-import NewsCard from './components/box/newsCard'
-import RankBox from './components/box/rankBox'
+import TopBar from './components/bar/topBar'
+import LoginPage from './pages/login/loginPage'
+import MainPage from './pages/main/mainPage.tsx'
 
-const Container = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100vh;
-`
+import { Route, Routes } from 'react-router-dom'
 
-const Wrapper = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 80%;
-`
-
-const BoxContainer = styled.div`
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    width: 80%;
-    height: 100%;
-`
-
-const RankContainer = styled.div`
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    /* background-color: #dc6161; */
-    width: 20%;
-    height: 100%;
-`
 
 function App() {
     
     return (
-        <Container>
-            <Wrapper>
-                <BoxContainer>
-                    <NewsCard />
-                </BoxContainer>
-                <RankContainer>
-                    <RankBox />
-                </RankContainer>
-            </Wrapper>
-        </Container>
+        <>
+            <TopBar/>
+            <Routes>
+                <Route path="/" element={<MainPage />} />
+                <Route path='/login' element={<LoginPage/>} />
+            </Routes>
+        </>
     )
 }
 
