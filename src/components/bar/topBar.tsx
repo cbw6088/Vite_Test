@@ -3,6 +3,7 @@ import profileImg from '../../assets/profile.png'
 import searchIcon from '../../assets/search.png'
 import categoryIcon from '../../assets/menu.png'
 import { Link } from 'react-router-dom'
+import { device } from '../../pages/styles/responsive'
 
 const Container = styled.div`
     display: flex;
@@ -12,6 +13,23 @@ const Container = styled.div`
     padding: 10px;
     width: 100%;
     height: 100px;
+
+    ${device.mobile} {
+        height: 80px;
+        padding: 5px;
+    }
+
+    ${device.tablet} {
+        height: 90px;
+    }
+
+    ${device.laptop} {
+        height: 100px;
+    }
+
+    ${device.desktop} {
+        height: 100px;
+    }
 `
 
 const TopContainer = styled.div`
@@ -72,6 +90,26 @@ const SearchContainer = styled.div`
     justify-content: center;
     width: 480px;
     height: 40px;
+
+    ${device.mobile} {
+        width: 100%;
+        height: 35px;
+    }
+
+    ${device.tablet} {
+        width: 360px;
+        height: 40px;
+    }
+
+    ${device.laptop} {
+        width: 420px;
+        height: 40px;
+    }
+
+    ${device.desktop} {
+        width: 480px;
+        height: 40px;
+    }
 `
 
 const SearchInput = styled.input`

@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import newsImg1 from '../../assets/newsImg/news1.jpg'
 import newsImg2 from '../../assets/newsImg/news2.jpg'
 import newsIcon1 from '../../assets/newsImg/newsIcon.jpeg'
+import { device } from '../../pages/styles/responsive'
 
 const Container = styled.div`
     display: flex;
@@ -26,6 +27,27 @@ const CardContainer = styled.div`
     border-radius: 20px;
     border: 1px solid #a6a6a6;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+
+    ${device.mobile} {
+        width: 100%;
+        height: 45vh;
+        margin-bottom: 15px;
+    }
+
+    ${device.tablet} {
+        width: calc((100%-20px)/2);
+        height: 40vh;
+    }
+
+    ${device.laptop} {
+        width: calc((100%-40px)/3);
+        height: 40vh;
+    }
+
+    ${device.desktop} {
+        width: calc((100%-40px)/3);
+        height: 40vh;
+    }
 `
 
 const NewsImg = styled.img`

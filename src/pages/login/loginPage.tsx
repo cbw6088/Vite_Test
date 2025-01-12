@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { device } from "../styles/responsive"
 
 const LoginContainer = styled.div`
     display: flex;
@@ -29,6 +30,26 @@ const LoginBox = styled.div`
     background-color: white;
     border-radius: 8px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
+
+    ${device.mobile} {
+        width: 90%;
+        height: 70%;
+    }
+
+    ${device.tablet} {
+        width: 60%;
+        height: 65%;    
+    }
+
+    ${device.laptop} {
+        width: 50%;
+        height: 60%;
+    }
+
+    ${device.desktop} {
+        width: 30%;
+        height: 60%;
+    }
 `
 
 const InputContainer = styled.input`
